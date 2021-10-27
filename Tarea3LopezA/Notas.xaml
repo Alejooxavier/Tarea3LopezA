@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout Margin="10,10,10,10">
             <Frame BackgroundColor="#2196F3" Padding="5" CornerRadius="0">
-                <Label Text="SISTEMA DE NOTAS UISRAEL" HorizontalTextAlignment="Center" TextColor="White" FontSize="15"/>
+                <Label Text="SISTEMA DE NOTAS UISRAEL" HorizontalTextAlignment="Center" TextColor="White" FontSize="16"/>
             </Frame>
             <Label x:Name="lblUsuario"/>
             <Grid Margin="10">
