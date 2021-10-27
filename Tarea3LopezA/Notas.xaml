@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea3LopezA.Notas">
+    <ContentPage.Content>
+        <StackLayout Margin="10,10,10,10">
+            <Frame BackgroundColor="#2196F3" Padding="5" CornerRadius="0">
+                <Label Text="SISTEMA DE NOTAS UISRAEL" HorizontalTextAlignment="Center" TextColor="White" FontSize="15"/>
+            </Frame>
+            <Label x:Name="lblUsuario"/>
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nota de seguimiento 1:" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtSeguimientoUno" ClearButtonVisibility="WhileEditing" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Examen 1:" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtExamenUno" ClearButtonVisibility="WhileEditing" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Nota seguimiento 2: " Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtSeguimientoDos" ClearButtonVisibility="WhileEditing" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Examen 2:" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtExamenDos" ClearButtonVisibility="WhileEditing" Keyboard="Numeric" Grid.Row="3" Grid.Column="1"/>
+
+                <Label Text="Nota final del curso" Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="Center" />
+                <Entry x:Name="txtFinal" IsReadOnly="True" Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="Center"/>
+
+                <Label Text="Estado Alumno" Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                <Entry x:Name="txtEstado" IsReadOnly="True" Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+            </Grid>
+
+            <Button x:Name="btnCalcularNota" Text="Calcular Nota Final" Clicked="btnCalcularNota_Clicked" BackgroundColor="#2c3e50" Margin="5"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

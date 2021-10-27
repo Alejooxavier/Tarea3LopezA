@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea3LopezA.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="15" CornerRadius="0">
+            <Label Text="ACCESO SISTEMA DE NOTAS" HorizontalTextAlignment="Center" TextColor="White" FontSize="15"/>
+        </Frame>
+        <Entry x:Name="txtUsuario" Placeholder="Usuario"/>
+        <Entry x:Name="txtClave" Placeholder="Password" IsPassword="True"/>
+        <Button x:Name="btnAbrir" Text="Acceder" Clicked="btnAbrir_Clicked">
+            
+        </Button>
+        
+    </StackLayout>
+
+</ContentPage>
